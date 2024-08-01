@@ -1,0 +1,64 @@
+.nav-wraper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+div .nav-wraper {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(230, 226, 206, 0.527);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: 5px 5px 5px rgba(118, 141, 123, 0.594);
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    width: 100%;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "Alumni Sans Pinstripe";
+}
+
+li {
+
+    align-items: center;
+}
+.menu{
+    display: flex;
+}
+
+.imgLogo {
+    width: 10%;
+
+}
+
+.nav-li {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 45%;
+
+    gap: 15px;
+    width: 45%;
+    justify-content: flex-end;
+}
