@@ -1,0 +1,12 @@
+.divItemList{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    max-width: 100vw;
+    height: 28.125rem;
+    text-wrap: wrap;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    row-gap: .625rem;
+    justify-items: center;
+}

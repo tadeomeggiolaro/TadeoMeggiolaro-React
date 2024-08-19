@@ -30,13 +30,16 @@ nav ul {
     width: 100%;
 
 }
+.active{
+    font-weight: bolder;
+    text-shadow: 3px 7px 4px rgba(118, 141, 123, 0.594) ;
+}
 
-nav a {
+.categoryLinks {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 30px;
-    font-weight: 900;
-    font-family: "Alumni Sans Pinstripe";
+    
 }
 
 li {
@@ -48,7 +51,7 @@ li {
 }
 
 .imgLogo {
-    width: 10%;
+    width: 15%;
 
 }
 

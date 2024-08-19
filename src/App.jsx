@@ -1,14 +1,32 @@
-import './App.css'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx'
-import Navbar from './components/NavBar/NavBar.jsx'
-function App() {
+import './App.css';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
+import Navbar from './components/NavBar/NavBar.jsx';
+import ItemDetailContainer from './components/ItemDeatailContainer/ItemDetailContainer.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Error from './components/Error/Error.jsx';
+import Footer from './components/Footer/Footer.jsx';
+import AboutUs from './components/Us/AboutUs.jsx';
 
+const App = () => {
     return (
-    <>
-    <Navbar/>
-    <ItemListContainer greeting='Bienvenidos a PANGEA!'/>
-    </>
-)
-}
+        <>
+            <BrowserRouter>
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<ItemListContainer />} />
 
-export default App
+                    <Route path="/category/:categoryId" element={<ItemListContainer />} />
+
+                    <Route path="/item/:id" element={<ItemDetailContainer />} />
+
+                    <Route path="*" element={<Error />} />
+
+                    <Route path="AboutUs" element={<AboutUs />} />
+                </Routes>
+                <Footer />
+            </BrowserRouter>
+        </>
+    );
+};
+
+export default App;
