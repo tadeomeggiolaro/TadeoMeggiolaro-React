@@ -14,13 +14,13 @@ return (
                     <NavLink to='/'><img className="imgLogo" src={logo} alt="" /></NavLink>
                         <div className="nav-li">
                             <li>
-                                <NavLink to="/category/buzo" className="categoryLinks" activeClassName="active">Buzos</NavLink>
+                                <NavLink to="/category/buzo" className={({isActive})=>(isActive?'link active':'categoryLink')}>Buzos</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/category/remera" className="categoryLinks" activeClassName="active">Remeras</NavLink>
+                                <NavLink to="/category/remera" className={({isActive})=>(isActive?'link active':'categoryLink')}>Remeras</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/category/pantalon" className="categoryLinks" activeClassName="active">Pantalones</NavLink>
+                                <NavLink to="/category/pantalon" className={({isActive})=>(isActive?'link active':'categoryLink')}>Pantalones</NavLink>
                             </li>
                             </div>
                             <CartWidget/>

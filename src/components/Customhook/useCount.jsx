@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const useCounter = (inicialValue,stock) =>{
+const useCounter = (inicialValue,stock,onAdd) =>{
     const [count, setCount] = useState(inicialValue);
     
     const sumar = ()=>{
@@ -9,16 +9,14 @@ const useCounter = (inicialValue,stock) =>{
     }
 
     const restar = ()=>{
-        if (count > 1)
+        if (count > inicialValue)
             setCount(count -1)
 
     }
+    
 
-    const addToCart = () =>{
-        alert(`Se agregaron ${count} productos al carrito`)
 
-    }
-    return{count,sumar,restar,addToCart};
+    return{count,sumar,restar,onAdd};
 
 }
 

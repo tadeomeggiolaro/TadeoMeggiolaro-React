@@ -2,16 +2,18 @@ import { useState } from "react"
 import useCounter from "../Customhook/useCount"
 
 
-const ItemCount = ({stock}) => {
-    const {count,sumar,restar,addToCart} = useCounter(1,stock)
+const ItemCount = ({stock,onAdd}) => {
+    const {count,sumar,restar} = useCounter(1,stock)
 
 
 return (
     <div>
     <button onClick={restar}>Restar prenda</button>
     <p>{count}</p>
+
     <button onClick={sumar}>Sumar prenda</button>
-    <button onClick={addToCart}>Agregar al carrito</button>
+    {stock > 0 ? <button onClick={()=>{onAdd(count)}}>Agregar al carrito</button> : <></>}
+    
     </div>
     )
 }
