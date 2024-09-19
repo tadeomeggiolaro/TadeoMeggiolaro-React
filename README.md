@@ -42,13 +42,13 @@ Instala las dependencias usando npm o yarn:
 
 
 npm install
-# o
+
 yarn install
 Inicia el servidor de desarrollo:
 
 
 npm run dev
-# o
+
 yarn dev
 Abre el navegador y ve a http://localhost:3000 para ver la aplicación en acción.
 
